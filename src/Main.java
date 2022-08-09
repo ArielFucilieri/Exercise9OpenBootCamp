@@ -28,58 +28,58 @@ public class Main {
 
     }
 
+}
 
-    static class Person{
-        private int Age;
-        private String Name;
-        private int phoneNumber;
+class Person{
+    private int Age;
+    private String Name;
+    private int phoneNumber;
 
-        public void setAge(int Age) {
-            this.Age = Age;
-        }
-
-        public void setName(String Name) {
-            this.Name = Name;
-        }
-
-        public void setPhoneNumber(int phoneNumber) {
-            this.phoneNumber = phoneNumber;
-        }
-
-        public int getAge() {
-            return Age;
-        }
-
-        public String getName() {
-            return Name;
-        }
-
-        public int getPhoneNumber() {
-            return phoneNumber;
-        }
+    public void setAge(int Age) {
+        this.Age = Age;
     }
 
-    static class Client extends Person{
-        private int Credit;
-
-        public void setCredit(int Credit) {
-            this.Credit = Credit;
-        }
-
-        public int getCredit() {
-            return Credit;
-        }
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
-    static class Employee extends Person{
-        private int salary;
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
-        public void setSalary(int salary) {
-            this.salary = salary;
-        }
+    public int getAge() {
+        return Age;
+    }
 
-        public int getSalary() {
-            return salary;
-        }
+    public String getName() {
+        return Name;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+}
+
+class Client extends Person{
+    private int Credit;
+
+    public void setCredit(int Credit) {
+        this.Credit = Credit;
+    }
+
+    public int getCredit() {
+        return Credit;
+    }
+}
+
+class Employee extends Person{
+    private int salary;
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public int getSalary() {
+        return salary;
     }
 }
