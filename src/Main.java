@@ -6,7 +6,7 @@ public class Main {
         client.setName("Ariel");
         client.setAge(30);
         client.setPhoneNumber(5555999);
-        client.setCredit(5000);
+        client.setCredit(5000.90);
 
         System.out.println("Client Name: " + client.getName());
         System.out.println("Client Age: " + client.getAge());
@@ -19,7 +19,7 @@ public class Main {
         employee.setName("Carlos");
         employee.setAge(45);
         employee.setPhoneNumber(5050555);
-        employee.setSalary(4000);
+        employee.setSalary(4000.50);
 
         System.out.println("Employee Name: " + employee.getName());
         System.out.println("Employee Age: " + employee.getAge());
@@ -61,25 +61,25 @@ class Person{
 }
 
 class Client extends Person{
-    private int Credit;
+    private double Credit;
 
-    public void setCredit(int Credit) {
+    public void setCredit(double Credit) {
         this.Credit = Credit;
     }
 
-    public int getCredit() {
+    public double getCredit() {
         return Credit;
     }
 }
 
 class Employee extends Person{
-    private int salary;
+    private double salary;
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 }
